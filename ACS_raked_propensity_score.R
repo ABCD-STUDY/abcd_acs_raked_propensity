@@ -1,7 +1,7 @@
 # Read in data
 #################################################################################################### 
 require(openxlsx)
-my.path="/Users/rongzablocki/Desktop/ABCD/Downloads/";
+my.path="/Desktop/ABCD/Downloads/";
 
 
 dat.1=read.xlsx(paste0(my.path,"NDA2_Jan_29_2019_Demo.xlsx"),sheet=1)#Demo
