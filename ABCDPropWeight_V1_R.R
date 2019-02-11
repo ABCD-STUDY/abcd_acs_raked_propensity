@@ -1,14 +1,14 @@
 # Read in data
 #################################################################################################### 
 require(openxlsx)
-my.path="/Desktop/ABCD/Downloads/";
+my.path="~/Desktop/ABCD/Downloads/";
 
 
-dat.1=read.xlsx(paste0(my.path,"NDA2_Jan_29_2019_Demo.xlsx"),sheet=1)#Demo
+dat.1=read.xlsx(paste0(my.path,"NDA2_Jan_30_2019_Demo.xlsx"),sheet=1)#Demo
 dat.demo=dat.1[dat.1$redcap_event_name == "baseline_year_1_arm_1",]
 dim(dat.demo)
 
-dat.2 = read.xlsx(paste0(my.path,"NDA2_Jan_29_2019_ACS.xlsx"),sheet=1) #ACS
+dat.2 = read.xlsx(paste0(my.path,"NDA2_Jan_30_2019_ACS.xlsx"),sheet=1) #ACS
 dat.acs = dat.2[dat.2$redcap_event_name == "baseline_year_1_arm_1",]
 nrow(dat.acs) 
 
@@ -711,7 +711,7 @@ wtd.table(abcdsub$sexc,weights=abcdsub$rpwgtmeth1)
 wtd.table(abcdsub$site_name,weights=abcdsub$rpwgtmeth1)
 
 # save data for future use
-# save 24jan2019 data with revised weights including trim values and sum of weight in denominator for controls 
+# save data with revised weights including trim values and sum of weight in denominator for controls 
 saveRDS(abcdsub, file= "Jan_2019abcd_R.Rds")
 
 ###################################################
