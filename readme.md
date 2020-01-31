@@ -40,4 +40,7 @@ The critical features in the exact replication of the propensity-based populatio
 1) missing data imputation replication will require the same order of case input, identical variables and coding and a fixed starting seed. The number of iterations and convergence criteria (e.g. logistic model) should also be fixed.
 2) for propensity model estimation, the convergence criteria for the ML estimates should be fixed.  If not, there may be very minor differences in the final parameter estimates and the predicted propensities that are used to derive the weights.
 
-
+#############################################################################################
+#important notes:
+The R script provided was based on the data and variable names from data dump. If you only have access to NDA released tables, some variable names could be different, therefore, the code may not run properly.
+Refer to NDA data dictionary for more details: https://nda.nih.gov/data_structure.html or send inquiry to : abcd-issues@ucsd.edu
