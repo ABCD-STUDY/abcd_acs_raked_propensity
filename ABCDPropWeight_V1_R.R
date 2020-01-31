@@ -117,6 +117,10 @@ newdemo$race_eth [newdemo$demo_race_a_p___24==1 ] <- 4
 newdemo$race_eth [newdemo$demo_race_a_p___25==1 ] <- 8
 newdemo$race_eth [newdemo$demo_race_a_p___99==1 | newdemo$demo_race_a_p___77==1] <- NA
 newdemo$race_eth [newdemo$mixed1==1]         <- 9
+
+#NOTE: if you downloaded data from NDA released table, use demo_ethn_v2 instead for the following line;
+#if you downloaded from data dump, demo_ethn_v2b is fine;
+#if you use RDS file, use demo_ethn_p instead
 newdemo$race_eth [newdemo$demo_ethn_v2b==1] <- 3 
 
 table(newdemo$race_eth,exclude=NULL)
